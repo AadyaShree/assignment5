@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+}
+header{
+    height: 100px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style-type: none; 
+}
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+li a::after{
+    display: block;
+    height: 4px;
+    width: 0;
+    content: '';
+    background:blueviolet;
+    transition: all .5s
+}
+li a:hover::after{
+    width:100%;
+}
+main{
+    display: flex;
+    /* border: 3px solid rgb(103, 224, 103); */
+    height: calc(100vh - 153px);
+    align-items: center;        /* for vertical */
+    justify-content: center;    /* for horizontal */
+ }
+ .wel{
+    font-size:50px;
+    margin-right: 10px;
+    color: blueviolet;
+ }
+ 
+h2 {
+    font-size: 40px;
+}
+.logo{
+    align-items: left;
+    height: 100px;width:130px;
+    background-image: url(./images/download.jpg);
+    background-size: auto;
+}
+.content-right{
+    padding: 5px;
+    margin-left: 10px;
+    font-size:xx-large;
+    width: 60%;
+    background-color:rgb(189, 144, 231);
+}
+.click-but{
+    font-size: 30px;
+}
+.img-right{
+    height: auto;
+    max-width: 500px;
+}
+.heading{
+    display: flex;
+
+
+}
+.learn-more-button{
+    border-radius: 7px;
+    padding: 2px;
+    background-color:rgb(201, 165, 235);
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
